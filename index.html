@@ -3,16 +3,167 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/8e82321372.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/script.js"></script>
   <title>Carlos Cuevas</title>
 </head>
 <body>
-  <h1>Welcome to Carlos Cuevas Music</h1>
-  <ul>
-    <li>About</li>
-    <li>Video</li>
-    <li>Audio</li>
-    <li>Reviews</li>
-    <li>Contact</li>
-  </ul>
+  <div class="wrapper">
+    <a id="scroll-to-top" href="#"><i class="fa-regular fa-circle-up"></i></a>
+    <header id="top">
+      <div class="site-title">
+        <h1>Carlos Cuevas</h1>
+        <p>Pianist, Composer, Arranger</p>
+      </div>
+      <button type="button" id="main-menu-open" tabindex="-1" hidden></button>
+      <nav>
+        <ul class="h6 main-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#audio">Audio</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="banner">
+      <img src="img/Hubert-Laws-India-reduced.png" alt="Carlos Cuevas playing with the Hubert Laws Trio in India" />
+    </div>
+    <main>
+      <section id="about" class="about">
+        <h2>About</h2>
+        <div>
+          <p>Carlos Cuevas’ music career expands more than 3 decades. His experience as pianist, keyboardist, composer, arranger, and producer has allowed him to explore virtually every musical avenue and to be equally at home on-stage and in the studio.</p>
+          
+          <p>Carlos holds a Bachelor of Music from the University of North Texas and a Master of Music from The Aaron Copland School of Music at Queens College, The City University of New York, where he became the recipient of the prestigious Sir Roland Hanna Memorial Jazz Award.&nbsp;</p>
+         
+          <p>His versatility has been put to work with the likes of NEA Jazz Master Hubert Laws, Bette Midler, Engelbert Humperdinck, The Los Angeles Symphonic Jazz Orchestra, and New York's Philharmonic Orchestra of the Americas to name a few. His arranging skills are also in high demand. Carlos has composed and arranged music for a wide variety of styles and ensembles that range anywhere from small group to big band and symphony orchestra.</p>
+         
+          <p>As a leader, Carlos has released two albums. “DEPICTION" and "UNINHIBITED REALM”. Both albums have been praised by Downbeat, Keyboard, Modern Drummer, &amp; Músico Pro magazines, as well as The Los Angeles Jazz Scene, and CDBaby.com.</p>
+         
+          <p>Carlos makes his home in New York City where he has performed at prestigious venues such as Carnegie Hall and Jazz at Lincoln Center. He is a sought-after arranger, studio musician, producer, and educator.</p>
+        </div>
+      </section>
+      <section id="video">
+        <h2>Video</h2>
+        <div class="video-container">
+            <figure>
+              <iframe max-width="360" max-height="202.5" src="https://www.youtube.com/embed/QZp93bZnULw?si=EMGYrNNTZ_gZzCVF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+              <figcaption><em>Land of Passion</em>&nbsp;Live with the Hubert Laws Group</figcaption>
+            </figure>
+            <figure>
+              <iframe max-width="360" max-height="202.5" src="https://www.youtube.com/embed/V92pVI6Jaeg?si=1XkWV7879n3xD915" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <figcaption><em>Better Days Ahead</em>&nbsp;by Pat Metheny</figcaption>
+            </figure>
+            <figure>
+              <iframe max-width="360" max-height="202.5" src="https://www.youtube.com/embed/ypZLWPWU9as?si=kq2ArUuO7qbUzQ9O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <figcaption><em>True</em>&nbsp;by Spandau Ballet</figcaption>
+            </figure>
+            <figure>
+            <iframe max-width="360" max-height="202.5" src="https://www.youtube.com/embed/FbwUgnl4Y58?si=TbdGSKcRwZRTxItd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><figcaption><em>Blue in Green</em>&nbsp;by Miles Davis &amp; Bill Evans</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section id="audio" class="audio">
+      <h2>Audio</h2>
+      <div id="audio-player-container">
+      <figure>
+        <figcaption class="h5">Saltaperico</figcaption>
+        <audio controls  controlsList="nodownload" src="audio/Saltaperico.mp3"></audio>
+      </figure>
+      <figure>
+        <figcaption class="h5">Rio</figcaption>
+        <audio controls controlsList="nodownload" src="audio/Rio.mp3"></audio>
+      </figure>
+      <figure>
+        <figcaption  class="h5">Mi-Aguinaldo</figcaption>
+        <audio controls controlsList="nodownload" src="audio/Mi-Aguinaldo.mp3"></audio>
+      </figure>
+      <figure>
+        <figcaption  class="h5">Lennon-McCartney</figcaption>
+        <audio controls controlsList="nodownload" src="audio/Lennon-McCartney.mp3"></audio>
+      </figure>
+      </div>
+    </section>
+
+    <section class="purchase">
+      <h2>Purchase Carlos' Music</h2>
+      <div class="purchase-container-wrapper">
+        <div class="purchase-album">
+          <figure>
+            <img src="img/UninhibitedRealmCover.png"/>
+          </figure>
+          <div class="purchase-links">
+            <a href="https://a.co/d/fMd0E5w" target="blank" class="purchase-icon"><i id="amazon" class="fa-brands fa-amazon"></i></a>
+            <a href="https://music.apple.com/us/album/uninhibited-realm/276369579" target="blank" class="purchase-icon"><i id="apple" class="fa-brands fa-apple"></i></a>
+          </div>
+        </div>
+        
+        <div class="purchase-album">
+          <figure>
+            <img src="img/DepictionCover.png" />
+          </figure>
+          <div class="purchase-links">
+            <a href="https://a.co/d/80ce5ih" target="blank" class="purchase-icon"><i id="amazon" class="fa-brands fa-amazon"></i></a>
+            <a href="https://music.apple.com/us/album/depiction/253908098" target="blank" class="purchase-icon"><i id="apple" class="fa-brands fa-apple"></i></a>
+          </div>
+        </div>
+        
+        <div class="purchase-album">
+          <figure>
+            <img src="img/RetrosonikCover.png" />
+          </figure>
+          <div class="purchase-links">
+            <a href="https://a.co/d/hqf5hhV" target="blank" class="purchase-icon"><i id="amazon" class="fa-brands fa-amazon"></i></a>
+            <a href="https://music.apple.com/us/album/songs-from-a-lighter-planet/1459824219" target="blank" class="purchase-icon"><i id="apple" class="fa-brands fa-apple"></i></a>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    <section id="reviews">
+      <h2>Reviews</h2>
+      <div class="reviews-container">
+        
+          <button id="open-review-1">
+            <img src="img/Depiction1.jpeg"/>
+          </button>
+          <dialog id="review-1-dialog">
+            <button id="close-review-1">X</button>
+            <img src="img/depiction-db.jpeg" />
+          </dialog>
+       
+       
+          <button id="open-review-2">
+            <img src="img/UI2.jpeg"/>
+          </button>
+          <dialog id="review-2-dialog">
+            <button id="close-review-2">X</button>
+            <img src="img/ur-key.jpeg" />
+          </dialog>
+      </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <a href="mailto:carlos@carloscuevas.net" class="btn">Contact Carlos</a>
+    </section>
+    </main>
+    <section id="social-links">
+      <a id="youTube" href="https://youtube.com/@PedestrianSway?si=3eQMVyflPOZSK8as" target="blank">
+        <i  class="fa-brands fa-youtube"></i>
+      </a>
+      <a id="instagram" href="https://www.instagram.com/carloscuevasmusic/"><i  class="fa-brands fa-instagram"></i></a>
+    </section>
+    <footer class="footer">
+<!-- TODO: copyright, social media links, link to purchase music -->
+<p>&copy; 2024 Carlos Cuevas.&nbsp; All Rights Reserved.</p>
+    </footer>
+  </div>
+  
 </body>
 </html>
