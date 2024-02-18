@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const opener = document.getElementById("main-menu-open");
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") opener.blur();
-    console.log("dafug", event.key);
+   
   } );  
   
   opener.addEventListener("touchstart", () => {
