@@ -19,30 +19,6 @@
   --sans-serif: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
 }
-#scroll-to-top {
-  font-size: 3rem;
-  position: fixed;
-  top: 85dvh;
-  right: 1rem;
-  color: var(--red);
-  z-index: 5;
-  view-timeline: --subjectReveal block;
-  animation-timeline: --subjectReveal;
-  animation-name: appear;
-  animation-fill-mode: both;
-  animation-duration: 1ms;
-}
-
-@keyframes appear {
-  from {
-    opacity: 0;
-    transform: scaleX(0) scaleY(0);
-  }
-  to {
-    opacity: 1;
-    transform: scaleX(1) scaleY(1);
-  }
-}
 
 html {
   box-sizing: border-box;
@@ -140,35 +116,36 @@ em {
   font-style: italic;
   font-weight: bold;
 }
-.slate {
-  background-color: var(--slate);
-  border: 2px solid var(--dark);
-}
-.green {
-  background-color: var(--green);
-}
-.dark {
-  background-color: var(--dark);
-}
-.red {
-  background-color: var(--red);
-}
-.blush {
-  background-color: var(--blush);
-}
-.rose {
-  background-color: var(--rose);
-}
-.stone {
-  background-color: var(--stone);
-}
-.white {
-  background-color: var(--white);
-}
 
 .wrapper {
   scroll-behavior: smooth;
-  width: 100dvw;
+  /* width: 100vw; */
+  margin: 0 auto;
+}
+
+#scroll-to-top {
+  font-size: 3rem;
+  position: fixed;
+  top: 85vh;
+  right: 1rem;
+  color: var(--red);
+  z-index: 5;
+  view-timeline: --subjectReveal block;
+  animation-timeline: --subjectReveal;
+  animation-name: appear;
+  animation-fill-mode: both;
+  animation-duration: 1ms;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scaleX(0) scaleY(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+  }
 }
 
 #top {
@@ -499,17 +476,17 @@ dialog::backdrop {
     background: transparent;
     color: var(--blush);
   }
-  #top button {
+  /* #top button {
     justify-self: end;
-  }
+  } */
 
   #main-menu-open::after {
     content: '\2630';
     font-size: 4rem;
   }
-  #main-menu-open:hover {
+  /* #main-menu-open:hover {
     color: var(--rose);
-  }
+  } */
 
   #main-menu-open + nav {
     position: fixed;
@@ -569,10 +546,12 @@ dialog::backdrop {
     content: '\2715';
     display: block;
     position: absolute;
-    top: 0.125rem;
-    right: 0.5rem;
+    /* top: 0.125rem;
+    right: 0.5rem; */
+    top: 0;
+    right: 0;
     font-size: 2rem;
-    line-height: 1;
+    /* line-height: 1; */
   }
 
   .reviews-container {
