@@ -116,31 +116,6 @@ em {
   font-style: italic;
   font-weight: bold;
 }
-.slate {
-  background-color: var(--slate);
-  border: 2px solid var(--dark);
-}
-.green {
-  background-color: var(--green);
-}
-.dark {
-  background-color: var(--dark);
-}
-.red {
-  background-color: var(--red);
-}
-.blush {
-  background-color: var(--blush);
-}
-.rose {
-  background-color: var(--rose);
-}
-.stone {
-  background-color: var(--stone);
-}
-.white {
-  background-color: var(--white);
-}
 
 .wrapper {
   scroll-behavior: smooth;
