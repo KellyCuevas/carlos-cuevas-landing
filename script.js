@@ -1,41 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const menuBtn = document.querySelector('.menu-toggle');
+  const siteNav = document.querySelector('.site-nav');
+  menuBtn.addEventListener('click', () => handleClick());
 
-  const opener = document.getElementById("main-menu-open");
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") opener.blur();
-    console.log("dafug", event.key);
-  } );  
-  
-  opener.addEventListener("touchstart", () => {
-		opener.focus();
-	} );
-  opener.nextElementSibling.addEventListener("touchstart",  () => {
-		opener.blur();
-	} );
+  function handleClick() {
+    console.log('button clicked!');
+    siteNav.classList.toggle('site-nav--open');
+    menuBtn.classList.toggle('open');
+  }
 
+  const reviewOneDialog = document.querySelector('#review-1-dialog');
+  const showDialogOne = document.querySelector('#open-review-1');
+  const closeDialogOne = document.querySelector('#close-review-1');
 
-const reviewOneDialog = document.querySelector("#review-1-dialog")
-const showDialogOne = document.querySelector("#open-review-1")
-const closeDialogOne = document.querySelector("#close-review-1")
+  showDialogOne.addEventListener('click', () => {
+    reviewOneDialog.showModal();
+  });
 
-showDialogOne.addEventListener("click", () => {
-  reviewOneDialog.showModal();
-})
+  closeDialogOne.addEventListener('click', () => {
+    reviewOneDialog.close();
+  });
+  const reviewTwoDialog = document.querySelector('#review-2-dialog');
+  const showDialogTwo = document.querySelector('#open-review-2');
+  const closeDialogTwo = document.querySelector('#close-review-2');
 
-closeDialogOne.addEventListener("click", () => {
-  reviewOneDialog.close();
-})
-const reviewTwoDialog = document.querySelector("#review-2-dialog")
-const showDialogTwo = document.querySelector("#open-review-2")
-const closeDialogTwo = document.querySelector("#close-review-2")
+  showDialogTwo.addEventListener('click', () => {
+    reviewTwoDialog.showModal();
+  });
 
-showDialogTwo.addEventListener("click", () => {
-  reviewTwoDialog.showModal();
-})
-
-closeDialogTwo.addEventListener("click", () => {
-  reviewTwoDialog.close();
-})
-
-
-})
+  closeDialogTwo.addEventListener('click', () => {
+    reviewTwoDialog.close();
+  });
+});
