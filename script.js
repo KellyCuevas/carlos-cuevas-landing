@@ -1,19 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-  {
-    const opener = document.querySelector('#main-menu-open');
-    document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape') opener.blur();
-    });
+  const menuBtn = document.querySelector('.menu-toggle');
+  const siteNav = document.querySelector('.site-nav');
+  menuBtn.addEventListener('click', () => handleClick());
 
-    opener.addEventListener('click', () => {});
-
-    opener.addEventListener('touchstart', () => {
-      opener.focus();
-    });
-    opener.nextElementSibling.addEventListener('touchstart', () => {
-      opener.blur();
-    });
+  function handleClick() {
+    console.log('button clicked!');
+    siteNav.classList.toggle('site-nav--open');
+    menuBtn.classList.toggle('open');
   }
+
   const reviewOneDialog = document.querySelector('#review-1-dialog');
   const showDialogOne = document.querySelector('#open-review-1');
   const closeDialogOne = document.querySelector('#close-review-1');
