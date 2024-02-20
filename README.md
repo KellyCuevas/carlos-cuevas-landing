@@ -1,2 +1,5 @@
 # carlos-cuevas-landing
-Temporary landing site for Carlos Cuevas Music 
+Landing site for pianist, composer, and arranger Carlos Cuevas 
+
+[View the live site](https://carloscuevas.net/)
+
