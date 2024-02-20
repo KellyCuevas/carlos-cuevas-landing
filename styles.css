@@ -77,6 +77,20 @@ h5 {
   line-height: 1.15;
 }
 
+h2 {
+  margin-top: 0;
+  text-align: center;
+}
+section {
+  padding: 2rem 4rem;
+}
+
+.banner,
+header,
+img {
+  margin-bottom: -0.5rem;
+}
+
 h1,
 .h1 {
   font-size: var(--h1);
@@ -158,10 +172,6 @@ em {
   justify-content: space-between;
 }
 
-/* #top > * {
-  border: 2px solid white;
-} */
-
 #top h1 {
   margin-top: 0;
   margin-bottom: 5px;
@@ -171,14 +181,6 @@ em {
   margin-top: 0px;
   font-size: var(--h4);
 }
-
-/* #main-menu-open + nav li {
-    width:34%;
-    margin:0 0.5em 0.5em;
-  }
-  #main-menu-open + nav li:nth-child(even) {
-    margin-left:0;
-  } */
 
 #top ul {
   justify-self: end;
@@ -199,11 +201,7 @@ em {
 .menu-toggle {
   display: none;
 }
-/* #top a {
-      display: block;
-      text-decoration: none;
-      color: var(--blush);
-    } */
+
 #top > nav a:focus,
 #top > nav a:hover {
   color: var(--rose);
@@ -211,19 +209,6 @@ em {
 
 .about {
   background-color: var(--blush);
-}
-h2 {
-  margin-top: 0;
-  text-align: center;
-}
-section {
-  padding: 2rem 4rem;
-}
-
-.banner,
-header,
-img {
-  margin-bottom: -0.5rem;
 }
 
 .video-container {
@@ -450,12 +435,6 @@ dialog::backdrop {
   font-size: 3.65rem;
 }
 
-/* @media(min-width: 900px) {
-
-
-
-} */
-
 @media (max-width: 750px) {
   #scroll-to-top {
     font-size: 2.5rem;
@@ -500,10 +479,6 @@ dialog::backdrop {
     border: none;
     text-decoration: none;
     appearance: none;
-
-    /* position: absolute;
-    top: 0.5rem;
-    right: 0.5rem; */
     cursor: pointer;
   }
 
@@ -521,7 +496,6 @@ dialog::backdrop {
 
   .hamburger {
     position: relative;
-    /* margin-bottom: 4px; */
   }
   .hamburger::before {
     transform: translateY(-6px);
