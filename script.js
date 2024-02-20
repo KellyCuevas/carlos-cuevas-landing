@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
   menuBtn.addEventListener('click', () => handleClick());
 
   function handleClick() {
-    console.log('button clicked!');
     siteNav.classList.toggle('site-nav--open');
     menuBtn.classList.toggle('open');
   }
